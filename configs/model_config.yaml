@@ -1,0 +1,16 @@
+# Sample model configuration for house price predictor
+model:
+  name: house_price_predictor
+  best_model: RandomForest
+  parameters:
+    n_estimators: 100
+    max_depth: 10
+    random_state: 42
+  target_variable: price
+features:
+  - feature1
+  - feature2
+  - feature3
+  # Add all relevant features here
+data:
+  target: price
